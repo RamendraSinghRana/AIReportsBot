@@ -1,0 +1,5 @@
+<input type="file" (change)="onFileChange($event)" />
+<button (click)="generate('excel')">Generate Excel</button>
+<button (click)="generate('pdf')">Generate PDF</button>
+<button (click)="generate('chart')">Generate Chart</button>
+<img *ngIf="chartSrc" [src]="chartSrc" alt="Chart" />
